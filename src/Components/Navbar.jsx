@@ -6,13 +6,12 @@ import Button1 from '../Features/Button1';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const dropdownRef = useRef();
+  const dropdownRef = useRef(null);
 
-  const toggleDropdown = (dropdownName) => {
-    setActiveDropdown((prev) => (prev === dropdownName ? null : dropdownName));
+  const toggleDropdown = (name) => {
+    setActiveDropdown((prev) => (prev === name ? null : name));
   };
 
-  // Close dropdown if clicked outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
@@ -25,7 +24,6 @@ const Navbar = () => {
 
   return (
     <nav className="h-[80px] relative font-medium px-4 md:px-5 lg:px-10 flex items-center justify-between z-30 bg-[#1233c1] text-white transition-all">
-
       {/* Logo */}
       <Link to="/">
         <img src={all.logo} alt="Logo" className="h-[40px] mr-10" />
@@ -33,11 +31,17 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="hidden lg:flex gap-8 text-[1rem] items-center">
-       <Link to="/connect"> <li className="hover:text-white/70 transition">Connected Workforce</li>
+        <Link to="/connect">
+          <li className="hover:text-white/70 transition">Connected Workforce</li>
         </Link>
-        {/* Dropdown Items */}
+
         {nav.map((item) => (
-          <li key={item.name} className="relative">
+          <li
+            key={item.name}
+            className="relative"
+            onMouseEnter={() => setActiveDropdown(item.name)}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
             <button
               onClick={() => toggleDropdown(item.name)}
               className="flex items-center gap-1"
@@ -45,14 +49,26 @@ const Navbar = () => {
               aria-controls={`${item.name}-dropdown`}
             >
               <span>{item.title}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className={`size-5 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`} viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className={`size-5 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
               </svg>
             </button>
 
             {/* Dropdown Content */}
             {activeDropdown === item.name && (
-              <div ref={dropdownRef} className="absolute bg-white text-black rounded-md shadow-md p-4 mt-2 left-0 z-40 w-max">
+              <div
+                ref={dropdownRef}
+                className="absolute bg-white text-black rounded-md shadow-md p-4 mt-10 left-0 z-40 w-max"
+              >
                 {item.name === 'solutions' && (
                   <div className="grid grid-cols-3 gap-4">
                     {/* Plan */}
@@ -94,17 +110,26 @@ const Navbar = () => {
 
                 {item.name === 'about' && (
                   <div className="grid grid-cols-1 gap-2">
-                    {['our-story', 'customers', 'leadership', 'board', 'events', 'news', 'alliances', 'careers', 'contact'].map((route, i) => (
-                      <NavLink key={i} to={`/${route}`}>{route.replace(/-/g, ' ')}</NavLink>
-                    ))}
+                    <NavLink to="/our-story">Our Story</NavLink>
+                    <NavLink to="/customers">Customers</NavLink>
+                    <NavLink to="/leadership">Leadership</NavLink>
+                    <NavLink to="/board">Board</NavLink>
+                    <NavLink to="/events">Events</NavLink>
+                    <NavLink to="/news">News</NavLink>
+                    <NavLink to="/alliances">Alliances</NavLink>
+                    <NavLink to="/careers">Careers</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                   </div>
                 )}
 
                 {item.name === 'resources' && (
                   <div className="grid grid-cols-1 gap-2">
-                    {['blog', 'case-studies', 'brochures', 'whitepapers', 'webinars', 'videos'].map((route, i) => (
-                      <NavLink key={i} to={`/${route}`}>{route.replace(/-/g, ' ')}</NavLink>
-                    ))}
+                    <NavLink to="/blog">Blog</NavLink>
+                    <NavLink to="/case-studies">Case Studies</NavLink>
+                    <NavLink to="/brochures">Brochures</NavLink>
+                    <NavLink to="/whitepapers">Whitepapers</NavLink>
+                    <NavLink to="/webinars">Webinars</NavLink>
+                    <NavLink to="/videos">Videos</NavLink>
                   </div>
                 )}
               </div>
@@ -113,17 +138,17 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Desktop Button */}
+      {/* Desktop CTA Button */}
       <Button1 />
 
-      {/* Mobile Menu Button */}
+      {/* Mobile Menu Toggle */}
       <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden block">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" viewBox="0 0 30 30">
           <path d="M3 7a1 1 0 0 0 0 2h24a1 1 0 0 0 0-2zM3 14a1 1 0 0 0 0 2h24a1 1 0 0 0 0-2zM3 21a1 1 0 0 0 0 2h24a1 1 0 0 0 0-2z" />
         </svg>
       </button>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Drawer */}
       {menuOpen && (
         <div className="absolute top-[80px] left-0 w-full bg-[#1233c1] p-6 lg:hidden z-20">
           <ul className="flex flex-col space-y-4 text-white text-lg">
