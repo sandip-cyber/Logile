@@ -1,9 +1,9 @@
 import React from "react";
 import { logosgrids } from "../assets/all";
 
-const Logogrid = () => {
+const BrandLogo = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white ScrollEffect">
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
           Powering the World’s Leading Retailers
@@ -36,4 +36,4 @@ const Logogrid = () => {
   );
 };
 
-export default Logogrid;
+export default BrandLogo;

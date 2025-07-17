@@ -3,7 +3,7 @@ import React from 'react'
 const Article = () => {
   return (
     
-      <div className="max-w-3xl mx-auto px-4 py-16 text-center space-y-6">
+      <div className="max-w-3xl mx-auto px-4 py-16 text-center space-y-6 ScrollEffect">
         <p className="text-lg text-gray-800">
           Connected Workforce is a comprehensive real-time, cloud-based platform that encompasses workforce,
           inventory and store execution management. It provides a clearer, more complete picture across all store operations.

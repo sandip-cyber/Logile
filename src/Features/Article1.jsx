@@ -2,7 +2,7 @@ import React from "react";
 
 const Article1 = () => {
   return (
-    <section className="py-20 px-4 ">
+    <section className="py-20 px-4 ScrollEffect">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Get Started: Where Do You Need the Most Support?

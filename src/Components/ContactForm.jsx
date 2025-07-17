@@ -33,7 +33,7 @@ const ConnectForm = () => {
   };
 
   return (
-    <div className="max-w-sm max-h-11/12 mx-auto mt-9 rounded-3xl overflow-hidden shadow-lg bg-blue-700 border-indigo-300">
+    <div className="max-w-sm max-h-11/12 mx-auto mt-9 rounded-3xl overflow-hidden shadow-lg bg-blue-700 border-indigo-300 ScrollEffect">
       <div className="bg-blue-700 text-white px-5 py-6 rounded-t-3xl">
         <h2 className="text-xl font-semibold">Let's Connect</h2>
       </div>

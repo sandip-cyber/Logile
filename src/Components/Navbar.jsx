@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="h-[80px] relative font-medium px-4 md:px-5 lg:px-10 flex items-center justify-between z-30 bg-[#1233c1] text-white transition-all">
+    <nav className="h-[80px] relative font-medium px-1 md:px-5 lg:px-10 flex items-center justify-between z-30 bg-[#1233c1] text-white transition-all">
       {/* Logo */}
       <Link to="/">
         <img src={all.logo} alt="Logo" className="h-[40px] mr-10" />

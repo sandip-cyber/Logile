@@ -6,7 +6,7 @@ const Component1 = () => {
   const activeItem = solution.find((item) => item.id === active);
 
   return (
-    <div className="px-6 md:px-10 lg:px-20 py-12">
+    <div className="px-6 md:px-10 lg:px-20 py-12 ScrollEffect ">
       {/* Headings */}
       <h2 className="text-2xl font-bold text-center mb-6 lg:hidden">
         We know retail.
@@ -19,7 +19,7 @@ const Component1 = () => {
         We live store operations.
       </h2>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 SideScrollEffect">
         {/* Icons Grid */}
         <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-4 place-items-center">
           {solution.map((item) => (
@@ -50,7 +50,7 @@ const Component1 = () => {
         </ul>
 
         {/* Content Panel */}
-        <div className="relative w-full mt-10 lg:mt-0">
+        <div className="relative w-full mt-10 lg:mt-0 SideScrollEffectRight ">
           {/* Background layer */}
           <div
             className={`absolute inset-0 translate-x-2 translate-y-2 rounded-[2rem] ${

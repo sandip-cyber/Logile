@@ -24,7 +24,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1637b3] rounded-3xl overflow-hidden font-sans  mb-10">
+    <footer className="bg-[#1637b3] rounded-3xl overflow-hidden font-sans  mb-10 ScrollEffect">
       {/* Top navigation grid */}
       <div className="max-w-6xl mx-auto px-1 sm:px-10 py-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-18 gap-y-10">
         {footer.map(({ title, name }) => (

@@ -1,6 +1,6 @@
 const Component2 = () => {
   return (
-    <div className="bg-white rounded-xl overflow-hidden border-2 border-black max-w-6xl  mx-auto mt-25 shadow-lg">
+    <div className="bg-white rounded-xl overflow-hidden border-2 border-black max-w-6xl  mx-auto mt-25 shadow-lg ScrollEffect">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left side - background image + circular image */}
         <div className="relative bg-cover bg-center p-10 flex justify-center items-center"

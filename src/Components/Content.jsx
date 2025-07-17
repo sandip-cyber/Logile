@@ -3,7 +3,7 @@ import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
-    <div className="py-10 grid md:grid-cols-2">
+    <div className="py-10 grid md:grid-cols-2 ScrollEffect">
      
      <div>
       {/* Extra Content */}

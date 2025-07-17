@@ -4,7 +4,7 @@ import { cards } from "../assets/all";
 
 const Component4 = () => {
   return (
-    <section className="bg-[#170033] px-4 py-14 relative">
+    <section className="bg-[#170033] px-4 py-14 relative ScrollEffect">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
           We&apos;re transforming the <br className="sm:hidden" /> retail

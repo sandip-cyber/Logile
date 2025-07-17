@@ -2,7 +2,7 @@ import React from "react";
 
 const Component6 = () => {
   return (
-    <div className="relative py-16">
+    <div className="relative py-16 ScrollEffect">
       {/* Shadow layer */}
       <div className="absolute inset-x-0 top-6 flex justify-center pointer-events-none z-0">
         <div className="w-full max-w-6xl h-full rounded-[2rem] bg-[#170033] shadow-inner" />

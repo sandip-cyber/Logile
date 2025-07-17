@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoEmbed = () => {
   return (
-    <div className="relative py-16 bg-white">
+    <div className=" relative py-16 bg-white ScrollEffect">
       {/* Shadow layer */}
       <div className="absolute inset-x-0 top-6 flex justify-center pointer-events-none z-0">
         <div className="w-full max-w-6xl h-full rounded-3xl bg-[#170033] shadow-inner" />
