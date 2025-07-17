@@ -23,8 +23,8 @@ const Demo = () => {
       <VideoEmbed/>
       <Article1/>
       <Component6/>
-      <Footer/>
 </div>
+      <Footer/>
       
   
     </>
