@@ -14,7 +14,7 @@ import Article from '../Features/Article'
 const Connect = () => {
   return (
     <>
-      <div class="text-sm w-full px-8 ">
+      <div class="text-sm w-full md:px-8 px-4 ">
     <HeroSection1/>
     <VideoEmbed/>
     <Article/>

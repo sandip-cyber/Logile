@@ -12,7 +12,7 @@ import Footer from '../Components/Footer.jsx'
 const Home = () => {
   return (
     <>
-      <div className="text-sm w-full px-8 ">
+      <div className="text-sm w-full px-4 md:px-8 ">
     <HeroSection/>
     <Component1/>
     <Component2/>

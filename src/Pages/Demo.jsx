@@ -13,7 +13,7 @@ import BrandLogo from '../Features/BrandLogo';
 const Demo = () => {
   return (
     <>
-    <div className="text-sm w-full px-8 ">
+    <div className="text-sm w-full md:px-8  px-4">
       <HeroSection3/>
       <Contact/>
       <Status/>
