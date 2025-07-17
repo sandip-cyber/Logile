@@ -152,6 +152,9 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-[80px] left-0 w-full bg-[#1233c1] p-6 lg:hidden z-20">
           <ul className="flex flex-col space-y-4 text-white text-lg">
+            <Link to="/connect">
+          <li className="hover:text-white/70 transition">Connected Workforce</li>
+        </Link>
             <li><NavLink to="/solutions" onClick={() => setMenuOpen(false)}>Solutions</NavLink></li>
             <li><NavLink to="/technology" onClick={() => setMenuOpen(false)}>Technology</NavLink></li>
             <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>

@@ -4,7 +4,7 @@ import { cards } from "../assets/all";
 
 const Component4 = () => {
   return (
-    <section className="bg-[#170033] px-4 py-14 relative ScrollEffect">
+    <section className="bg-[#170033] px-4 py-14 relative ">
       <div className="text-center max-w-3xl mx-auto mb-10">
         <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
           We&apos;re transforming the <br className="sm:hidden" /> retail
@@ -12,7 +12,7 @@ const Component4 = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto ScrollEffect">
         {cards.map((card, index) => (
           <div
             key={index}

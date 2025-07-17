@@ -7,7 +7,7 @@
     }
 
     .marquee-inner {
-        animation: marqueeScroll 50s linear infinite;
+        animation: marqueeScroll 45s linear infinite;
     }
 
     @keyframes marqueeScroll {

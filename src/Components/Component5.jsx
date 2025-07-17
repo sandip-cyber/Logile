@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 const Component5 = () => {
   return (
     <div
-      className="relative w-full px-4 py-10 bg-cover bg-center ScrollEffect"
+      className="relative w-full px-4 py-10 bg-cover bg-center "
       style={{
         backgroundImage:
           "url('https://www.logile.com/wp-content/uploads/2024/10/clothing-store-blur.jpg')",
@@ -28,7 +28,7 @@ const Component5 = () => {
       >
         {testimonials.map(({ logo, bgColor, quote, author, title }, idx) => (
           <SwiperSlide key={idx}>
-            <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-lg backdrop-blur-md bg-white/70 max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-lg backdrop-blur-md bg-white/70 max-w-4xl mx-auto ScrollEffect">
               {/* Logo section */}
               <div
                 className="flex items-center justify-center p-8 md:w-1/3 w-full"
