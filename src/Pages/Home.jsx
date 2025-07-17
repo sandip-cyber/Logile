@@ -16,14 +16,17 @@ const Home = () => {
     <HeroSection/>
     <Component1/>
     <Component2/>
+
+    </div>
+    
     <Component3/>
     <Component4/>
     <Component5/>
     <Component6/>
     <Footer/>
     
-    </div>
     </>
+  
   )
   
 }
