@@ -1,19 +1,18 @@
 import React from "react";
-import {logosgrids} from '../assets/all'
+import { logosgrids } from "../assets/all";
 
-
-const logogrid = () => {
+const Logogrid = () => {
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-4 text-center">
+      <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
           Powering the World’s Leading Retailers
         </h2>
         <p className="text-gray-700 mb-10">
-          Top retailers partner with Logile to run more efficiently, engage associates and improve service.
+          Top retailers partner with Logile to run more efficiently, engage associates, and improve service.
         </p>
 
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
           {logosgrids.map((logo, index) => (
             <li key={index} className="flex justify-center">
               <a
@@ -26,8 +25,7 @@ const logogrid = () => {
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-12 object-contain"
-                  
+                  className="h-12 object-contain mx-auto"
                 />
               </a>
             </li>
@@ -36,5 +34,6 @@ const logogrid = () => {
       </div>
     </section>
   );
-}
-export default logogrid;
+};
+
+export default Logogrid;
