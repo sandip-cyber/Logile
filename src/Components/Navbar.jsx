@@ -160,7 +160,10 @@ const Navbar = () => {
             <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
             <li><NavLink to="/resources" onClick={() => setMenuOpen(false)}>Resources</NavLink></li>
           </ul>
-          <Button1 />
+          <Link to="/demo"><button className=" lg:inline bg-white text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12 mx-5 my-4 rounded-md font-bold">
+          Request a Demo
+        </button>
+    </Link>
         </div>
       )}
     </nav>
