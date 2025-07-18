@@ -4,8 +4,8 @@ import { logosgrids } from "../assets/all";
 const BrandLogoCustomer = () => {
   return (
     <section className="py-20 bg-white ScrollEffect">
-      <div className="max-w-5xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
+      <div className="max-w-5xl mx-auto px-8 text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-purple-900 mb-4">
           Helping retailers worldwide achieve real-time adaptability and unparalleled efficiency
         </h2>
         

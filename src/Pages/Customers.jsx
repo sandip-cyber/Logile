@@ -1,8 +1,8 @@
 import React from 'react'
 import CustomerHerosec from '../Components/CustomerHerosec'
 import BrandLogoCustomer from '../Features/BrandLogoCustomer'
-import Component5 from '../Components/Component5'
 import Footer from '../Components/Footer'
+import CardSlide from '../Components/CardSlide'
 
 const Customers = () => {
   return (
@@ -12,7 +12,7 @@ const Customers = () => {
         <BrandLogoCustomer/>
         </div>
         <div>
-        <Component5/>
+        <CardSlide/>
         <Footer/>
     </div>
     </>
