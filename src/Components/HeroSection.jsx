@@ -46,7 +46,10 @@ const HeroSection = () => {
     <p className="text-slate-100 md:text-base max-md:px-5 font-semibold  text-left max-w-xl py-5">
         Unlock the logic of retail with a suite of unified store solutions that use sophisticated AI and machine learning to plan, schedule and execute your retail strategy through a connected workforce.
     </p>
-
+         <Link to="/demo"><button className=" lg:inline bg-white  md:hidden text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12 mx-5 my-4 rounded-md font-bold">
+          Request a Demo
+        </button>
+    </Link>
    
 </div>
 
