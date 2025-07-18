@@ -30,8 +30,8 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:block lg:flex  md:gap-5 text-[0.9rem] items-center">
-       
+      <ul className="hidden md:block lg:flex  md:gap-7 text-[0.9rem] items-center">
+       <Link to= "/connect"><h1>Connected Workforce</h1></Link> 
 
         {nav.map((item) => (
           <li

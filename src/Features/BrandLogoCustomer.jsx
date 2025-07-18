@@ -1,19 +1,16 @@
 import React from "react";
 import { logosgrids } from "../assets/all";
 
-const BrandLogo = () => {
+const BrandLogoCustomer = () => {
   return (
     <section className="py-20 bg-white ScrollEffect">
       <div className="max-w-5xl mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-4">
-          Powering the World’s Leading Retailers
+          Helping retailers worldwide achieve real-time adaptability and unparalleled efficiency
         </h2>
-        <p className="text-gray-700 mb-10">
-          Top retailers partner with Logile to run more efficiently, engage associates, and improve service.
-        </p>
-
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-          {logosgrids.slice(0,5).map((logo, index) => (
+        
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 py-8">
+          {logosgrids.map((logo, index) => (
             <li key={index} className="flex justify-center">
               <a
                 href={logo.href}
@@ -36,4 +33,4 @@ const BrandLogo = () => {
   );
 };
 
-export default BrandLogo;
+export default BrandLogoCustomer;

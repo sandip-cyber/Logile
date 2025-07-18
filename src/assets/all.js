@@ -38,7 +38,7 @@ export const logos = [
 ];
 
 export const nav = [
-          { title: 'Connected Workforce', name: 'Connected' },
+          
           { title: 'Solutions', name: 'solutions' },
           { title: 'Technology', name: 'technology' },
           { title: 'About', name: 'about' },
@@ -234,6 +234,106 @@ export const logosgrids = [
     href: "https://www.sprouts.com/",
     src: "https://www.logile.com/wp-content/uploads/2024/10/logo-sprouts.svg",
     alt: "Sprouts Farmers Market",
+  },
+  {
+    href: "https://www.sprouts.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/01/Ahold-Logo.svg",
+    alt: "Sprouts Farmers Market",
+  },
+  {
+    href: "https://www.sprouts.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-big-y.svg",
+    alt: "Sprouts Farmers Market",
+  },
+  {
+    href: "https://foodlion.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-food-lion.svg",
+    alt: "Sprouts Farmers Market",
+  },
+  {
+    href: "https://www.sprouts.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/01/The_Co-Operative_clover_leaf_logo.png",
+    alt: "Sprouts Farmers Market",
+  },
+  {
+    href: "https://www.wegmans.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-wegmans.svg",
+    alt: "wegmans",
+  },
+  {
+    href: "https://www.weismarkets.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-weis.svg",
+    alt: "weismarkets",
+  },
+  {
+    href: "https://www.walmart.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-walmart.svg",
+    alt: "walmart",
+  },
+  {
+    href: "https://vallartasupermarkets.com/en/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-vallarta.svg",
+    alt: "vallartasupermarkets",
+  },
+  {
+    href: "https://www.trigs.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-trigs.svg",
+    alt: "trigs",
+  },
+  {
+    href: "https://www.mythorntons.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/01/Thorntons.svg",
+    alt: "Thorntons",
+  },
+  {
+    href: "https://www.gianteagle.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-giant-eagle.svg",
+    alt: "gianteagle",
+  },
+  {
+    href: "https://www.heinens.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-heinens.svg",
+    alt: "heinens",
+  },
+  {
+    href: "https://www.marksandspencer.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/03/Marks-Spencer-Logo.png",
+    alt: "marksandspencer",
+  },
+  {
+    href: "https://www.spartannash.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/01/8.svg",
+    alt: "spartannash",
+  },
+  {
+    href: "https://www.meijer.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-meijer.svg",
+    alt: "meijer",
+  },
+  {
+    href: "https://www.metcash.com/",
+    src: "https://www.logile.com/wp-content/uploads/2025/01/Metcash.png",
+    alt: "Metcash",
+  },
+  {
+    href: "https://schnucks.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-schnucks.svg",
+    alt: "schnucks",
+  },
+  {
+    href: "https://coborns.com/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-coborns.svg",
+    alt: "coborns",
+  },
+  {
+    href: "https://www.chedraui.com.mx/",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-chedraui.svg",
+    alt: "chedraui",
+  },
+  {
+    href: "https://www.cardfactory.co.uk//",
+    src: "https://www.logile.com/wp-content/uploads/2024/10/logo-cardfactory.svg",
+    alt: "cardfactory",
   },
 ];
 

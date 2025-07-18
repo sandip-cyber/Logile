@@ -1,10 +1,10 @@
 import React from 'react';
 import Home from './Pages/Home';
 import Connect from './Pages/Connect';
-import Navbar from './Components/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Ads from './Components/Ads';
 import Demo from './Pages/Demo';
+import Customers from './Pages/Customers';
 
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
     <Route path="/" element={<Home/>}/>
     <Route path="/connect" element={<Connect/>}/>
     <Route path="/demo" element ={<Demo/>}/>
+    <Route path="/customers" element = {<Customers/>} />
 
     </Routes>
     
