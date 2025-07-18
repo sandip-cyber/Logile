@@ -1,5 +1,5 @@
 import React from 'react'
-import { logos, testimonials } from '../assets/all'
+import { testimonials } from '../assets/all'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
