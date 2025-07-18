@@ -150,7 +150,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       {menuOpen && (
-        <div className="absolute top-[80px] left-0 w-full bg-[#1233c1] p-6 lg:hidden z-20">
+        <div className="absolute top-[80px] left-0 w-full h-[430px] bg-[#1233c1] p-6 lg:hidden z-20">
           <ul className="flex flex-col space-y-4 text-white text-lg">
             <Link to="/connect">
           <li className="hover:text-white/70 transition">Connected Workforce</li>
@@ -160,7 +160,7 @@ const Navbar = () => {
             <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
             <li><NavLink to="/resources" onClick={() => setMenuOpen(false)}>Resources</NavLink></li>
           </ul>
-          <Link to="/demo"><button className=" lg:inline bg-white text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12 mx-5 my-4 rounded-md font-bold">
+          <Link to="/demo"><button className=" lg:inline bg-white text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12  my-4 rounded-md font-bold">
           Request a Demo
         </button>
     </Link>

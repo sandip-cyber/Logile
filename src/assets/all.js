@@ -68,15 +68,9 @@ export const aboutLinks = [
 ];
 
 export const technologyLink = [
-  { name: 'Our Story', path: '/our-story' },
-  { name: 'Customers', path: '/customers' },
-  { name: 'Leadership Team', path: '/leadership' },
-  { name: 'Board of Directors', path: '/board' },
-  { name: 'Events', path: '/events' },
-  { name: 'News', path: '/news' },
-  { name: 'Alliances', path: '/alliances' },
-  { name: 'Careers', path: '/careers' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Our Technology', path: '/Our-Technology' },
+  { name: 'Open Architecture', path: '/Open-Architecture' },
+  
 ];
 
 
