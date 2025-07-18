@@ -7,7 +7,7 @@ const Header2 = () => {
           See What Makes the Connected Workforce Platform So Powerful
         </h2>
         <p className="text-gray-700 mb-10">
-          …and how it can transform your operations.
+          ….and how it can transform your operations.
         </p>
 
       
