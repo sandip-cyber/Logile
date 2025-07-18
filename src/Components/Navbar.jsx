@@ -150,7 +150,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       {menuOpen && (
-        <div className="absolute top-[80px] left-0 w-full h-[430px] bg-[#1233c1] p-6 lg:hidden z-20">
+        <div className="absolute top-[80px] left-0 w-full h-[420px] rounded-b-4xl bg-[#1233c1] p-6 lg:hidden z-20">
           <ul className="flex flex-col space-y-4 text-white text-lg">
             <Link to="/connect">
           <li className="hover:text-white/70 transition">Connected Workforce</li>
