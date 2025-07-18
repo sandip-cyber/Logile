@@ -38,6 +38,7 @@ export const logos = [
 ];
 
 export const nav = [
+          { title: 'Connected Workforce', name: 'Connected' },
           { title: 'Solutions', name: 'solutions' },
           { title: 'Technology', name: 'technology' },
           { title: 'About', name: 'about' },
@@ -65,6 +66,19 @@ export const aboutLinks = [
   { name: 'Careers', path: '/careers' },
   { name: 'Contact', path: '/contact' },
 ];
+
+export const technologyLink = [
+  { name: 'Our Story', path: '/our-story' },
+  { name: 'Customers', path: '/customers' },
+  { name: 'Leadership Team', path: '/leadership' },
+  { name: 'Board of Directors', path: '/board' },
+  { name: 'Events', path: '/events' },
+  { name: 'News', path: '/news' },
+  { name: 'Alliances', path: '/alliances' },
+  { name: 'Careers', path: '/careers' },
+  { name: 'Contact', path: '/contact' },
+];
+
 
 export const solution = [
   {
@@ -150,16 +164,14 @@ export const technologyLinks = [
   { name: "Open Architecture", path: "/technology/open-architecture" },
 ];
 
-
-
-// export const ResourcesLinks = [
-//   { name: "Blog", path: "/blog" },
-//   { name: "Customer Case Studies", path: "/case" },
-//   { name: "Brochures", path: "/brochures" },
-//   { name: "Whitepapers", path: "/whitepapers" },
-//   { name: "Webinars", path: "/webinars" },
-//   { name: "Videos", path: "/videos" },
-// ];
+export const ResourcesLink = [
+  { name: "Blog", path: "/blog" },
+  { name: "Customer Case Studies", path: "/case" },
+  { name: "Brochures", path: "/brochures" },
+  { name: "Whitepapers", path: "/whitepapers" },
+  { name: "Webinars", path: "/webinars" },
+  { name: "Videos", path: "/videos" },
+];
 
 // export const aboutLinks = [
 //   { name: "Our Story", path: "/our-story" },

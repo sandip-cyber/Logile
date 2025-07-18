@@ -1,48 +1,68 @@
 import React from "react";
+
 import {
-  footer,
+  nav,
   solutions,
-  technologyLinks,
+  technologyLink,
   aboutLinks,
-  ResourcesLinks
+  ResourcesLinks 
 } from "../assets/all";
 
+
+
+
 const Footer = () => {
+
+  
+
+const aboutLinksLabeled = aboutLinks.map(({ name, path }) => ({
+  label: name,
+  path,
+}));
+const ResourcesLinksLabeled = ResourcesLinks.map(({ name, path }) => ({
+  label: name,
+  path,
+}));
+const TechnologyLinksLabeled = technologyLink.map(({name,path}) =>({
+  label: name,
+  path,
+}))
+const SolutionsLinksLabeled = solutions.map(({ label, link }) => ({ label, path: link }));
+
+
+
   const getSubMenu = (name) => {
     switch (name) {
-        case "about":
-          return aboutLinks;
+      case "about":
+        return aboutLinksLabeled;
       case "solutions":
-        return solutions.map(({ label, link }) => ({ name: label, path: link }));
+        return SolutionsLinksLabeled;
       case "technology":
-        return technologyLinks;
-        case "resources":
-          return ResourcesLinks;
+        return TechnologyLinksLabeled;
+      case "resources":
+        return ResourcesLinksLabeled;
       default:
         return [];
     }
   };
 
   return (
-    <footer className="bg-[#1637b3] rounded-3xl mx-5 md:mx-10 overflow-hidden font-sans  mb-10 ScrollEffect">
-      {/* Top navigation grid */}
+    <footer className="bg-[#1637b3] rounded-3xl mx-5 md:mx-10 overflow-hidden font-sans mb-10 ScrollEffect">
+      {/* Top Navigation Grid */}
       <div className="max-w-6xl mx-auto px-1 sm:px-10 py-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-18 gap-y-10">
-        {footer.map(({ title, name }) => (
+        {nav.map(({ title, name }) => (
           <div key={name} className="flex flex-col">
-            {/* Pill button */}
             <button className="self-start bg-[#1f4dc9] border border-white/30 rounded-full px-5 py-2 text-sm mb-6 font-semibold text-white hover:bg-[#2b62df] transition-colors whitespace-nowrap">
               {title}
             </button>
-
-            {/* Submenu links */}
             <ul className="space-y-4 text-white text-sm leading-relaxed">
-              {getSubMenu(name).map(({ name, path }, i) => (
+              {getSubMenu(name).map(({ label, path }, i) => (
                 <li key={i}>
                   <a
                     href={path}
                     className="hover:underline hover:text-[#a3b9ff] transition-colors"
                   >
-                    {name}
+                    {label}
                   </a>
                 </li>
               ))}
@@ -51,9 +71,9 @@ const Footer = () => {
         ))}
       </div>
 
-      {/* Bottom bar */}
-      <div className="bg-[#0f247d] px-6 sm:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5  mx-auto ">
-        {/* Logo left */}
+      {/* Bottom Bar */}
+      <div className="bg-[#0f247d] px-6 sm:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5 mx-auto">
+        {/* Logo */}
         <a
           href="https://www.logile.com"
           aria-label="Logile: The Logic of Retail"
@@ -70,7 +90,7 @@ const Footer = () => {
           <span className="sr-only">The Logic of Retail</span>
         </a>
 
-        {/* Social icons center */}
+        {/* Social Icons */}
         <div className="flex space-x-6 text-white text-xl">
           <a
             href="https://www.linkedin.com/company/logile/"
@@ -79,6 +99,7 @@ const Footer = () => {
             aria-label="LinkedIn"
             className="hover:text-[#a3b9ff]"
           >
+            {/* LinkedIn SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -97,6 +118,7 @@ const Footer = () => {
             aria-label="YouTube"
             className="hover:text-[#a3b9ff]"
           >
+            {/* YouTube SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -115,6 +137,7 @@ const Footer = () => {
             aria-label="Facebook"
             className="hover:text-[#a3b9ff]"
           >
+            {/* Facebook SVG */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -127,7 +150,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Legal links + copyright container */}
+        {/* Legal Info */}
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 text-white text-sm whitespace-nowrap">
           <nav aria-label="Legal" className="flex space-x-8">
             <a
@@ -143,7 +166,6 @@ const Footer = () => {
               Cookie Policy
             </a>
           </nav>
-
           <p>© 2025 Logile, Inc. All Rights Reserved.</p>
         </div>
       </div>
