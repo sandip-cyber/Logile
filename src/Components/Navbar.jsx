@@ -23,17 +23,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="h-[80px] rounded-t-4xl relative font-medium px-1 md:px-5 lg:px-10 flex items-center justify-between z-30 bg-[#1233c1] text-white transition-all">
+    <nav className="h-[80px] rounded-t-4xl relative font-medium  md:px-10 lg:px-5 flex items-center justify-between z-30 bg-[#1233c1] text-white transition-all">
       {/* Logo */}
       <Link to="/">
-        <img src={all.logo} alt="Logo" className="h-[40px] mr-10" />
+        <img src={all.logo} alt="Logo" className="h-[40px] " />
       </Link>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:block lg:flex gap-8 text-[1rem] items-center">
-        <Link to="/connect">
-          <li className="hover:text-white/70 transition">Connected Workforce</li>
-        </Link>
+      <ul className="hidden md:block lg:flex  md:gap-5 text-[0.9rem] items-center">
+       
 
         {nav.map((item) => (
           <li
