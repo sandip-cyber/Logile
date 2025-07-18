@@ -30,7 +30,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex gap-8 text-[1rem] items-center">
+      <ul className="hidden md:block lg:flex gap-8 text-[1rem] items-center">
         <Link to="/connect">
           <li className="hover:text-white/70 transition">Connected Workforce</li>
         </Link>
