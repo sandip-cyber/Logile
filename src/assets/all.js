@@ -39,6 +39,7 @@ export const logos = [
 
 export const nav = [
           
+           
           { title: 'Solutions', name: 'solutions' },
           { title: 'Technology', name: 'technology' },
           { title: 'About', name: 'about' },

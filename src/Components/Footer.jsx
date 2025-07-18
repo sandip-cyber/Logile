@@ -33,6 +33,7 @@ const SolutionsLinksLabeled = solutions.map(({ label, link }) => ({ label, path:
 
   const getSubMenu = (name) => {
     switch (name) {
+      
       case "about":
         return aboutLinksLabeled;
       case "solutions":
@@ -49,10 +50,14 @@ const SolutionsLinksLabeled = solutions.map(({ label, link }) => ({ label, path:
   return (
     <footer className="bg-[#1637b3] rounded-3xl mx-5 md:mx-10 overflow-hidden font-sans mb-10 ScrollEffect">
       {/* Top Navigation Grid */}
-      <div className="max-w-6xl mx-auto px-1 sm:px-10 py-12 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-18 gap-y-10">
-        {nav.map(({ title, name }) => (
+      <button className=" bg-[#1f4dc9] border border-white/30 rounded-full py-2 text-sm  font-semibold text-white hover:bg-[#2b62df] px-10 mx-20 my-10 transition-colors whitespace-nowrap">
+               Connected Workforce
+            </button>
+      <div className="max-w-6xl mx-auto sm:px-10 px-10 py-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-18 gap-y-10">
+         
+        {nav.map(({ title, name }) => ( 
           <div key={name} className="flex flex-col">
-            <button className="self-start bg-[#1f4dc9] border border-white/30 rounded-full px-5 py-2 text-sm mb-6 font-semibold text-white hover:bg-[#2b62df] transition-colors whitespace-nowrap">
+            <button className="self-start bg-[#1f4dc9] border border-white/30 rounded-full px-5 py-2 text-sm  font-semibold text-white hover:bg-[#2b62df] transition-colors whitespace-nowrap">
               {title}
             </button>
             <ul className="space-y-4 text-white text-sm leading-relaxed">
