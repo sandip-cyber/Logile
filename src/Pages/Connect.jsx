@@ -23,8 +23,8 @@ const Connect = () => {
     <Header1/>
     <FeatureCard/>
     <Component6/>
-    <Footer/>
     </div>
+    <Footer/>
     <div>
       
     </div>
