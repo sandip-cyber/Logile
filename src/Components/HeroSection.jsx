@@ -29,7 +29,11 @@ const HeroSection = () => {
         Unlock the logic of retail with a suite of unified store solutions that use sophisticated AI and machine learning to plan, schedule and execute your retail strategy through a connected workforce.
     </span>
     </p>
-<div className="ml-15 mt-8 mb-14">
+<div className="ml-10 mt-8 mb-14">
+     <Link to="/demo"><button className=" lg:inline bg-white hidden md:block text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12 mx-5 my-4 rounded-md font-bold">
+          Request a Demo
+        </button>
+    </Link>
     
 
 </div>
@@ -43,10 +47,7 @@ const HeroSection = () => {
         Unlock the logic of retail with a suite of unified store solutions that use sophisticated AI and machine learning to plan, schedule and execute your retail strategy through a connected workforce.
     </p>
 
-    <Link to="/demo"><button className=" lg:inline bg-white text-[#1233c1] text-sm hover:opacity-90 active:scale-95 transition-all w-40 md:h-11 h-12 mx-5 my-4 rounded-md font-bold">
-          Request a Demo
-        </button>
-    </Link>
+   
 </div>
 
 {/* Company logo scroll */}
